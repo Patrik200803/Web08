@@ -1,26 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #04AA6D;
+        }
+        </style>
     <title>Gál Patrick | Dog</title>
 </head>
 <body>
-    <center>
-    <div class="main">
-            <h1>Gál Patrick</h1>
-            <div class="navigation">
-                <center>
-                <div style="padding: 10px 20px 10px 20px; margin: 30px 10px 25px 10px; float:initial">
-                <a href="index.html" class="btn">My</a>
-                <a href="comp.html" class="btn">Computer</a>
-                <a href="#" class="btn" style="box-shadow: 1px 1px 5px #cad800a4, -1px 1px 5px #cad800a4, 1px -1px 5px #cad800a4, -1px -1px 5px #cad800a4;">Dog</a>
-                <a href="feladat.html" class="btn">Feladat</a>
-                </div>
-                </center>
-            </div>
+    <ul>
+        <li><a href="index.html">Kezdőlap</a></li>
+        <li><a href="computer.html">Számítógép</a></li>
+        <li><a class="active" href="dog.html">Kutya</a></li>
+        <li><a href="lista.html">Lista</a></li>
+        <li><a href="orarend.html">Órarend</a></li>
+        <li><a href="urlap.html">Űrlap</a></li>
+        <li><a href="kapcsolat.html">Kapcsolatok</a></li>
+        <li><a href="evszakok.html">Évszakok</a></li>
+      </ul>
+
+
+
+
+
+
+
+
+
             <div class="index">
                 <div style="padding: 20px" class="index-cont">
                     <h3 style="font-size: 150%; text-align: center;">Winny</h3>
@@ -39,12 +73,6 @@
                     
                 </div>
             </div>
-            
-    </div>
-    </center>
-    <a href="https://www.instagram.com/patrick_aki_/">
-        <img id="https://www.instagram.com/patrick_aki_/" src="Images/insta.png" width="50" height="50" >
-    
 </body>
 </html>
 
