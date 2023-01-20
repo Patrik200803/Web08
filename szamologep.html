@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gál Patrick | Számológép</title>
+    <style>
+        fieldset{
+            background-color: rgb(150, 9, 9);
+        }
+        legend{
+            color: rgb(0, 0, 0);
+            background-color: rgb(235, 17, 17);
+            border: 2px solid black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            border-radius: 5px;
+        }
+
+    </style>
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #460088;
+        }
+        img{
+          size: 500px;
+          width: 400px;
+          height: 500px;
+        }
+        </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Kezdőlap</a></li>
+        <li><a href="computer.html">Számítógép</a></li>
+        <li><a href="dog.html">Kutya</a></li>
+        <li><a href="lista.html">Lista</a></li>
+        <li><a href="orarend.html">Órarend</a></li>
+        <li><a href="urlap.html">Űrlap</a></li>
+        <li><a href="kapcsolat.html">Kapcsolatok</a></li>
+        <li><a href="evszakok.html">Évszakok</a></li>
+        <li><a class="active" href="szamologep.html">Számológép</a></li>
+      </ul>
+      <br>
+
+    <form action="javascript:void(0)">
+        <fieldset>
+            <legend>Számol</legend>
+            <br>
+            <input type="number" name="sz" id="a" placeholder="első szám" requiredg>
+            <input type="number" name="sz" id="b" placeholder="második szám" required>
+            <input type="text" name="sz" id="c" placeholder="végeredmény" readonly>
+            <br><br>
+            <input type="submit" value="+" onclick="ad()">
+            <input type="submit" value="-" onclick="ki()">
+            <input type="submit" value="*" onclick="szor()">
+            <input type="submit" value="/" onclick="oszt()">
+            <input type="reset" value="törlés">
+        </fieldset>
+    </form>
+
+    <script>
+        function ad() {
+            c.value = Number(a.value) + Number(b.value)
+        }
+
+        function ki() {
+            c.value = Number(a.value) - Number(b.value)
+        }
+
+        function szor() {
+            c.value = Number(a.value) * Number(b.value)
+        }
+
+        function oszt() {
+            c.value = Number(a.value) / Number(b.value)
+        }
+    </script> 
+</body>
+</html>
